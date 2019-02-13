@@ -17,7 +17,13 @@ function main() {
     console.log(objectOfRequiredElements);
     if (allRequiredElementsAreOk(objectOfRequiredElements)) {
         console.log("Submit OK");
-        window.location = "/submitOK.html";
+        let windowLocation = window.location.href.split("/");
+        if(windowLocation[windowLocation.length-1]==="index.html"){
+            windowLocation[windowLocation.length-1]="submitOK.html"
+        }else{
+            windowLocation.push("submitOK.html")
+        }
+        window.location.href = windowLocation.join("/");
     } else {
         console.log("Submit FAILED");
         paintRequiredElements(objectOfRequiredElements);
