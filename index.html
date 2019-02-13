@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BVirtual Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--CSS-->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form onsubmit="return false">
+            <div >
+                <fieldset>
+                    <legend>Basic Information</legend>
+                    <div class="group-label-basicInput-box">
+                        <div class="label-basicInput-box">
+                            <label for="firstName">First Name <span>*</span></label>
+                            <input id="firstName" type="text" name="firstName" placeholder="Child's First Name"
+                                data-required="true">
+                        </div>
+                        <div class="label-basicInput-box">
+                            <label for="lastName">Last Name <span>*</span></label>
+                            <input id="lastName" type="text" name="lastName" placeholder="Child's Last Name"
+                                data-required="true">
+                        </div>
+                    </div>
+                    <div class="label-basicInput-box">
+                        <label for="streetAddress">Street Address <span>*</span></label>
+                        <input id="streetAddress" type="text" name="streetAddress" placeholder="Street Address"
+                            data-required="true">
+                    </div>
+                    <div class="group-label-basicInput-box">
+                        <div class="label-basicInput-box">
+                            <label for="city">City <span>*</span></label>
+                            <input id="city" type="text" name="city" placeholder="City" data-required="true">
+                        </div>
+                        <div class="label-basicInput-box">
+                            <label for="zipCode">Zip Code <span>*</span></label>
+                            <input id="zipCode" type="text" name="zipCode" placeholder="Zip Code" data-required="true">
+                        </div>
+                    </div>
+                    <div class="label-basicInput-box">
+                        <label for="birthDate">Birth Date <span>*</span></label>
+                        <input id="birthDate" type="date" name="birthDate" data-required="true">
+                    </div>
+                    <div>
+                        <label>Grade <span>*</span></label>
+                        <div class="label-radioInput-box">
+                            <div>
+                                <input id="preSchoolGrade" type="radio" name="grade" value="Pre-School" data-required="true">
+                                <label for="preSchoolGrade">Pre-School</label>
+                            </div>
+                            <div>
+                                <input id="firstGrade" type="radio" name="grade" value="1st">
+                                <label for="firstGrade">1st</label>
+                            </div>
+                            <div>
+                                <input id="secondGrade" type="radio" name="grade" value="2nd">
+                                <label for="secondGrade">2nd</label>
+                            </div>
+                            <div>
+                                <input id="thirdGrade" type="radio" name="grade" value="3rd">
+                                <label for="thirdGrade">3rd</label>
+                            </div>
+                            <div>
+                                <input id="fourthGrade" type="radio" name="grade" value="4th">
+                                <label for="fourthGrade">4th</label>
+                            </div>
+                            <div>
+                                <input id="fifthGrade" type="radio" name="grade" value="5th">
+                                <label for="fifthGrade">5th</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="label-basicInput-box">
+                        <label for="parent">Parent/Guardian <span>*</span></label>
+                        <input id="parent" type="text" name="parent" placeholder="Parent/Guardian's Name" data-required="true">
+                    </div>
+                    <div class="group-label-basicInput-box">
+                        <div class="label-basicInput-box">
+                            <label for="contactPhone">Contact Phone <span>*</span></label>
+                            <input id="contactPhone" type="text" name="contactPhone" placeholder="Contact Phone"
+                                data-required="true">
+                        </div>
+                        <div class="label-basicInput-box">
+                            <label for="contactEmail">Contact Email <span>*</span></label>
+                            <input id="contactEmail" type="text" name="contactEmail" placeholder="Contact Email"
+                                data-required="true">
+                        </div>
+                    </div>
+
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Which elementary schools do you live near?</legend>
+                    <div class="group-selects-box">
+                        <div>
+                            <label>First Closest School <span>*</span></label>
+                            <select name="firstClosestSchool" data-required="true">
+                                <option value="" selected>Select an option...</option>
+                                <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                                <option value="Greenbay">Greenbay</option>
+                                <option value="Howard A Yeager">Howard A Yeager</option>
+                                <option value="Marjorie P Hart">Marjorie P Hart</option>
+                                <option value="North Elementary">North Elementary</option>
+                                <option value="South Elementary">South Elementary</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Second Closest School <span>*</span></label>
+                            <select name="secondClosestSchool" data-required="true">
+                                <option value="" selected>Select an option...</option>
+                                <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                                <option value="Greenbay">Greenbay</option>
+                                <option value="Howard A Yeager">Howard A Yeager</option>
+                                <option value="Marjorie P Hart">Marjorie P Hart</option>
+                                <option value="North Elementary">North Elementary</option>
+                                <option value="South Elementary">South Elementary</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+
+                <div class="small-fieldsets-box">
+                    <fieldset>
+                        <legend>What position(s) do you normally play? <span>(check all that apply)</span></legend>
+                        <div>
+                            <input id="normallyForward" type="checkbox" name="normallyPlay" value="Forward">
+                            <label for="normallyForward">Forward</label>
+                        </div>
+                        <div>
+                            <input id="normallyMidfield" type="checkbox" name="normallyPlay" value="Midfield">
+                            <label for="normallyMidfield">Midfield</label>
+                        </div>
+                        <div>
+                            <input id="normallyDefense" type="checkbox" name="normallyPlay" value="Defense">
+                            <label for="normallyDefense">Defense</label>
+                        </div>
+                        <div>
+                            <input id="normallyGoalkeeper" type="checkbox" name="normallyPlay" value="Goalkeeper">
+                            <label for="normallyGoalkeeper">Goalkeeper</label>
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>What position(s) do you want to play? <span>(check all that apply)</span></legend>
+                        <div>
+                            <input id="wantForward" type="checkbox" name="wantPlay" value="Forward">
+                            <label for="wantForward">Forward</label>
+                        </div>
+                        <div>
+                            <input id="wantMidfield" type="checkbox" name="wantPlay" value="Midfield">
+                            <label for="wantMidfield">Midfield</label>
+                        </div>
+                        <div>
+                            <input id="wantDefense" type="checkbox" name="wantPlay" value="Defense">
+                            <label for="wantDefense">Defense</label>
+                        </div>
+                        <div>
+                            <input id="wantGoalkeeper" type="checkbox" name="wantPlay" value="Goalkeeper">
+                            <label for="wantGoalkeeper">Goalkeeper</label>
+                        </div>
+                    </fieldset>
+                </div>
+
+
+                <fieldset>
+                    <legend>Uniform</legend>
+                    <div>
+                        <label for="haveUniform">Already Have a Uniform</label>
+                        <input id="haveUniform" type="checkbox" name="haveUniform" value="Yes">
+                        <div class="small-fieldsets-box">
+                            <fieldset>
+                                <legend>Jersey Size</legend>
+                                <div>
+                                    <input id="jerseyYS" type="radio" name="jerseySize" value="Youth Small">
+                                    <label for="jerseyYS">Youth Small</label>
+                                </div>
+                                <div>
+                                    <input id="jerseyYM" type="radio" name="jerseySize" value="Youth Medium">
+                                    <label for="jerseyYM">Youth Medium</label>
+                                </div>
+                                <div>
+                                    <input id="jerseyYL" type="radio" name="jerseySize" value="Youth Large">
+                                    <label for="jerseyYL">Youth Large</label>
+                                </div>
+                                <div>
+                                    <input id="jerseyS" type="radio" name="jerseySize" value="Small">
+                                    <label for="jerseyS">Small</label>
+                                </div>
+                                <div>
+                                    <input id="jerseyM" type="radio" name="jerseySize" value="Medium">
+                                    <label for="jerseyM">Medium</label>
+                                </div>
+                                <div>
+                                    <input id="jerseyL" type="radio" name="jerseySize" value="Large">
+                                    <label for="jerseyL">Large</label>
+                                </div>
+                                <div>
+                                    <input id="jerseyEL" type="radio" name="jerseySize" value="Extra-Large">
+                                    <label for="jerseyEL">Extra-Large</label>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Shorts Size</legend>
+                                <div>
+                                    <input id="shortsYS" type="radio" name="shortsSize" value="Youth Small">
+                                    <label for="shortsYS">Youth Small</label>
+                                </div>
+                                <div>
+                                    <input id="shortsYM" type="radio" name="shortsSize" value="Youth Medium">
+                                    <label for="shortsYM">Youth Medium</label>
+                                </div>
+                                <div>
+                                    <input id="shortsYL" type="radio" name="shortsSize" value="Youth Large">
+                                    <label for="shortsYL">Youth Large</label>
+                                </div>
+                                <div>
+                                    <input id="shortsS" type="radio" name="shortsSize" value="Small">
+                                    <label for="shortsS">Small</label>
+                                </div>
+                                <div>
+                                    <input id="shortsM" type="radio" name="shortsSize" value="Medium">
+                                    <label for="shortsM">Medium</label>
+                                </div>
+                                <div>
+                                    <input id="shortsL" type="radio" name="shortsSize" value="Large">
+                                    <label for="shortsL">Large</label>
+                                </div>
+                                <div>
+                                    <input id="shortsEL" type="radio" name="shortsSize" value="Extra-Large">
+                                    <label for="shortsEL">Extra-Large</label>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Permission to Play</legend>
+                    <p>
+                        I, the parent or guardian of the minor registrant, agree that the registrant and I will
+                        abide by all the rules of the Northside Youth Soccer League (NYSL). In recognizing the
+                        possibility of physical injury associated with soccer and in consideration for the “League”
+                        accepting the registrant for its soccer programs and activities, I hereby release,
+                        discharge, and/or otherwise indemnify NYSL, their employees and associated personnel and
+                        volunteers, including the facilities used for practices and games, against any claim by or
+                        on behalf of the registrant as a result of the registrant’s participation in the program
+                        and/or being transported to or from NYSL sponsored activities, which transportation.
+                    </p>
+                    <p>
+                        By entering your name below, I hereby agree and authorize the above. In addition, by
+                        signing below, I also acknowledge that I have read the cancellation policy and agree to its
+                        terms.
+                    </p>
+                    <div class="label-basicInput-box">
+                        <label for="signature">Parent/Guardian Signature <span>*</span></label>
+                        <input id="signature" type="text" name="signature" data-required="true">
+                    </div>
+                    <div class="label-basicInput-box">
+                        <label for="signatureDate">Date <span>*</span></label>
+                        <input id="signatureDate" type="date" name="signatureDate" data-required="true">
+                    </div>
+                </fieldset>
+
+            </div>
+
+            <button id="btnSubmit">Submit</button>
+        </form>
+    </div>
+
+
+
+    <!--SCRIPTS: JS-->
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

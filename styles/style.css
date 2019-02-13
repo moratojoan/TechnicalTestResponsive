@@ -1,0 +1,101 @@
+.incorrect {
+    background-color: red;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    fieldset {
+        /* Box */
+        margin-bottom: 15px;
+    }
+
+    .label-basicInput-box {
+        /* Box */
+        margin-bottom: 10px;
+
+        /* Flex */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .label-radioInput-box {
+        /* Box */
+        margin-bottom: 10px;
+
+        /* Flex */
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    fieldset {
+        /* Box */
+        margin-bottom: 15px;
+    }
+
+    .label-basicInput-box {
+        /* Box */
+        margin-bottom: 10px;
+
+        /* Flex */
+        display: flex;
+        flex-direction: row;
+    }
+
+    .group-label-basicInput-box {
+        /* Flex */
+        display: flex;
+        flex-direction: row;
+    }
+
+    .label-radioInput-box {
+        /* Box */
+        margin-bottom: 10px;
+
+        /* Flex */
+        display: flex;
+        flex-direction: row;
+    }
+
+    .small-fieldsets-box {
+        /* Flex */
+        display: flex;
+        flex-direction: row;
+    }
+
+    .small-fieldsets-box fieldset {
+        width: 50%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .container{
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .group-selects-box {
+        /* Flex */
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container{
+        max-width: 900px;
+        margin: auto;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container{
+        max-width: 1000px;
+        margin: auto;
+    }
+}
