@@ -4,6 +4,7 @@ const RADIO = "radio";
 const SELECT = "SELECT";
 const EMPTY_STRING = "";
 const INCORRECT = "incorrect";
+const DISPLAY_NONE = "display-none";
 
 
 let btnSubmit = document.getElementById("btnSubmit");
@@ -26,7 +27,9 @@ function main() {
         window.location.href = windowLocation.join("/");
     } else {
         console.log("Submit FAILED");
+        displayMessage();
         paintRequiredElements(objectOfRequiredElements);
+        window.scrollTo(0, 0);
     }
 }
 
@@ -142,4 +145,8 @@ function paintSelect(select) {
     } else {
         select.classList.add(INCORRECT);
     }
+}
+
+function displayMessage(){
+    document.getElementsByClassName("message")[0].classList.remove(DISPLAY_NONE);
 }

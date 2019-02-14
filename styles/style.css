@@ -1,5 +1,22 @@
+h1{
+    text-align: center;
+}
+
 .incorrect {
-    background-color: red;
+    background-color:red;
+}
+
+.message {
+    /* Box */
+    padding: 25px;
+    border: solid 2px red;
+    /* Text */
+    text-align: center;
+    color: red;
+}
+
+.display-none {
+    display: none;
 }
 
 /* Extra small devices (phones, 600px and down) */
